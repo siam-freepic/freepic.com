@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Website</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      background-color: #444;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .photo img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .photo:hover img {
+      transform: scale(1.1);
+    }
+    .photo-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background: rgba(255, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Photography Website</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="gallery">
+    <div class="photo">
+      <img src="C:\Users\OPSIAM\Desktop\desing\tyhj.jpg" alt="Photo 1">
+      <div class="photo-info">
+        <span>Photo Title</span>
+        <span>Photographer Name</span>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="C:\Users\OPSIAM\Downloads\att.Uvoo09AmUajnNWqTLP1LEPoNpcjIPcbvoMVnN1ghtYk (2).jpg" alt="Photo 2">
+      <div class="photo-info">
+        <span>Photo Title</span>
+        <span>Photographer Name</span>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="C:\Users\OPSIAM\Desktop\gfg.jpg" alt="Photo 3">
+      <div class="photo-info">
+        <span>Photo Title</span>
+        <span>Photographer Name</span>
+      </div>
+    </div>
+    <!-- Add more photo elements as needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Photography Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
